@@ -35,8 +35,7 @@ header {
 .attributes {
     display: inline-flex;
     width: 100%;
-    justify-content: center;
-    align-content: center;
+    text-align: center;
 }
 
 .attributes h1 {
@@ -66,6 +65,7 @@ footer div {
 
 .openingTimes {
    text-align: center;
+   margin-left: 30px;
 }
 
 .social {
@@ -146,6 +146,8 @@ footer div {
 
 #title-container {
     text-align: center;
+    margin-top: -10px;
+    margin-bottom: -10px;
 }
 
 
@@ -158,6 +160,11 @@ footer div {
 
 #gallery-container img {
     height: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;;
 }
 
 /*  
@@ -170,13 +177,15 @@ footer div {
     text-align: center;
     background-color: cornflowerblue;
     border-radius: 5px;
-    margin-top: 30px;
 }
 
 .item-info img {
     height: 150px;
     margin-top: 10px;
     margin-bottom: 10px;
+    border-radius: 5px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .item-info p {
@@ -199,15 +208,16 @@ footer div {
 }
 
 #contactForm {
-    padding-top: 30px;
-    padding-left: 50px;
+    padding-top: 70px;
+    padding-left: 20px;
     padding-bottom: 20px;
-    margin-left: 30px;
-    width: 600px;
+    margin-left: 5px;
+    width: 500px;
     align-content: center;
     justify-content: center;
     background-color: sandybrown;
     border-radius: 5px;
+    font-size: 20px;
 }
 
 #contactForm input {
@@ -219,7 +229,7 @@ footer div {
 }
 
 #mapImageContainer {
-    margin-left: 100px;
+    margin-left: 180px;
 }
 
 #mapImage {
@@ -233,5 +243,5 @@ footer div {
 
 
 input#submitButton{
-    margin-left: 50px;
+    margin-left: 150px;
 }

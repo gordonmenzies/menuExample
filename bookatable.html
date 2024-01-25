@@ -21,36 +21,41 @@
         <!-- Contact Form -->
         <div id="bookTable"> 
             <div id="contactForm">
-                <div>
-                    <label class="querysubmission" for="name">Name</label>
-                    <input type="text" name="name" value="Your Name" id="name"/>
-                </div>
-                    <br>
-                <div>
-                    <label class="querysubmission" for="email">Telephone Number</label>
-                    <input type="text" name="email" placeholder="Your Phone Number" id="email"/>
-                </div>
-                    <br>
-                <div>
-                    <label class="querysubmission" for="query">Number Of People</label>
-                    <input type="number" max="10" name="numberOfPeople"  id="numberOfPeople" placeholder="How many people are dining?"/>
-                </div>
-                    <br>
-                <div>
-                    <label class="querysubmission" for="date">Date</label>
-                    <input type="date" name="date"  id="date" placeholder="When would you like a table for"/>
-                </div>
-                    <br>
-                <div>
-                    <label class="querysubmission" for="query">Time</label>
-                    <input type="time" name="time"  id="time" placeholder="Your query"/>
-                </div>
-                    <br>
-                    <input id="submitButton" type=submit value="Submit Information">
-            </div>
+                <form action="" id="tableBookingForm">
+                    <div>
+                        <label class="querysubmission" for="name">Name</label>
+                        <input type="text" name="name" value="Your Name" id="nameInput"/>
+                    </div>
+                        <br>
+                    <div>
+                        <label class="querysubmission" for="telephone">Telephone Number</label>
+                        <input type="text" name="telephone" placeholder="Your Phone Number" id="telephoneInput"/>
+                    </div>
+                        <br>
+                    <div>
+                        <label class="querysubmission" for="numberOfPeople">Number Of People</label>
+                        <input type="number" max="10" name="numberOfPeople"  id="numberOfPeople" placeholder="How many people are dining?"/>
+                    </div>
+                        <br>
+                    <div>
+                        <label class="querysubmission" for="date">Date</label>
+                        <input type="date" name="date"  id="dateInput" placeholder="When would you like a table for"/>
+                    </div>
+                        <br>
+                    <div>
+                        <label class="querysubmission" for="query">Time</label>
+                        <input type="time" name="time"  id="time" placeholder="Your query"/>
+                    </div>
+                        <br>
+                        <input id="submitButton" type=submit value="Submit Information">
+                    </div>
+                </form>
         <!-- Map -->
             <div id="mapImageContainer">
-                <img src="./images/mapImage.png" id="mapImage">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.6368351150772!2d-2.59652366
+                7729708!3d51.44646305915703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4871836681b3d861%3A0x8ee4
+                b22e4b9ad71f!2sBristol!5e0!3m2!1sen!2suk!4v1706196444276!5m2!1sen!2suk" width="600" height="450" style="border:0;" 
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </body>
@@ -69,4 +74,5 @@
             <a href="https://twitter.com/" target="_blank"><img src="./images/twitter.png"></a>
         </div>
     </footer>
+    <script src="app.js"></script>
 </html>

@@ -103,35 +103,31 @@ function displayMenu(id) {
 
 }
 
-/* 
-    Alternative approach using information from location of event click to
-    identify which item was clicked.
-
-function displayMenuItem() {
-    document.getElementsByClassName("menuItem").addEventListener("click" , returnMenuItem()) 
-}
-*/
+// a form to confirm to the customer that they have submitted their information
+// button is connected but information is not recieved from inputs
 
 
-/*
-    Example menu item to present
+let loginForm = document.getElementById("tableBookingForm");
 
-function returnMenuItem(menu) {
-    let displayMenu = menu.map(function (item) {
-    return `<article class="menu-item">
-          <img src=${item.img} alt=${item.title} class="photo" />
-          <div class="item-info">
-            <header>
-              <h4>${item.title}</h4>
-              <h4 class="price">$${item.price}</h4>
-            </header>
-            <p class="item-text">
-              ${item.desc}
-            </p>
-          </div>
-        </article>`;
-  });
-}
-*/
+loginForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  console.log("button press")
+
+
+  let name = document.getElementById(nameInput)
+  let telephone = document.getElementById(telephoneInput)
+  //let numberOfPeople = document.getElementById(numberOfPeople)
+  let date = document.getElementById(dateInput)
+  //let time = document.getElementById(time)
+
+  alert(`you have submitted a booking under the name of ${name} \n
+        with the telephone submission of ${telephone} \n
+        for ${numberOfPeople} \n
+        on the ${date} \n
+        at ${time} `)
+  })
+
+
 
 
