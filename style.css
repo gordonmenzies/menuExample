@@ -1,0 +1,203 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display:inline-flex;
+    width:100%;
+}
+
+.title {
+    width: 500px;
+    margin-top: 30px;
+    padding-left: 60px;
+}
+
+.navigation {
+    display: inline-flex;
+    width:100%;
+    margin-top: 30px;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.navigation h2 {
+    margin-left: 50px;
+    color: red;
+    align-content: right;
+}
+
+.mainImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.attributes {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.attributes h1 {
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+footer {
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+footer div {
+    width: 33%;
+
+}
+
+.footerTitle {
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.openingTimes {
+   text-align: center;
+}
+
+.social {
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+
+.social img {
+    height: 50px;
+    width: 50px;
+    margin-left: 20px; 
+}
+
+
+/*
+    menu.hmtl styles
+*/
+
+.menuContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menuContainer div {
+    width: 10%;
+    height: 5%;
+    border: solid red;
+    margin-left: 5%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+#displayedInformation {
+    width: 100%;
+    margin-top: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.photo {
+    align-content: center;
+    height: 100px;
+    margin-right: 50px;
+}
+
+.menuItem h1 {
+    font-size: 20px;
+}
+
+.menuItem h2 {
+    font-size: 10px;
+}
+
+.menu-item {
+    align-content: center;
+    justify-content: center;
+}
+
+.menu-item img {
+    height: 200px;
+}
+
+.price {
+    margin-left: 50px;
+}
+
+/*
+    gallery.hmtl styles
+*/
+
+#title-container {
+    text-align: center;
+}
+
+
+#gallery-container {
+    justify-content: space-around;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallery-container img {
+    height: 200px;
+}
+
+/*  
+    app.js effected text 
+*/
+
+.item-info {
+    border: solid red;
+    display: flexbox;
+    align-items: center;
+    text-align: center;
+}
+
+.item-info img {
+    height: 300px;
+}
+
+.item-info p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*
+    Book table page
+*/
+
+#bookTable {
+    display: inline-flex;
+}
+
+#contactForm {
+    margin-top: 40px;
+    margin-left: 60px;
+    width: 340px;
+    align-content: center;
+    justify-content: center;
+}
+
+#mapImageContainer {
+    margin-left: 400px;
+}
+
+#mapImage {
+    height: 300px;
+}

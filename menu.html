@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <title>Menu</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <header>
+    <div class="title">
+        <h1>Flavour Fusion Bistro</h1>
+    </div>
+    <div class="navigation">
+        <h2><a href="index.html">Home</a></h2>
+        <h2><a href="menu.html">Menu</a></h2>
+        <h2><a href="gallery.html">Gallery</a></h2>
+        <h2><a href="bookatable.html">Book a Table</a></h2>
+    </div>
+</header>
+  <body>
+    <!-- List of menu items by name that can be selected by buttons and the informaiton displayed underneath-->
+    <div class="menuContainer">
+        <div class="menuItem" id="one" onclick="displayMenu(1)">
+            <h1> buttermilk pancakes</h1>
+            <h2> 15.99 </h2>
+        </div>
+        <div class="menuItem" id="two" onclick="displayMenu(2)">
+            <h1> diner double</h1>
+            <h2> 13.99 </h2>
+        </div>
+        <div class="menuItem" id="three" onclick="displayMenu(3)">
+            <h1> godzilla milkshake</h1>
+            <h2> 6.99</h2>
+        </div>
+        <div  class="menuItem" id="three" onclick="displayMenu(4)">
+            <h1> country delight</h1>
+            <h2> 20.99 </h2>
+        </div>
+        <div class="menuItem" id="four" onclick="displayMenu(5)">
+            <h1> egg attack</h1>
+            <h2> 22.99</h2>
+        </div>
+        <div class="menuItem" id="five" onclick="displayMenu(6)">
+            <h1> oreo dream</h1>
+            <h2> 18.99</h2>
+        </div>
+        <div class="menuItem" id="six" onclick="displayMenu(7)">
+            <h1> bacon overflow</h1>
+            <h2> 8.99 </h2>
+        </div>
+        <div class="menuItem" id="seven" onclick="displayMenu(8)">
+            <h1>american classic</h1>
+            <h2>12.99</h2>
+        </div>
+    </div>
+    <div id="displayedInformation">
+        <!-- Menu items are displayed here  -->
+    </div>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
