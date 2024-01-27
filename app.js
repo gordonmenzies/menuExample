@@ -119,7 +119,7 @@ function displayMenu(id) {
     const checkStoredObj = JSON.parse(checkStored)
 
     const name = checkStoredObj.name
-    const numberOfPeople = checkStoredObj.number
+    const numberOfPeople = checkStoredObj.numberOfPeople
     const telephone = checkStoredObj.telephone
     const date = checkStoredObj.date
     const time = checkStoredObj.time
