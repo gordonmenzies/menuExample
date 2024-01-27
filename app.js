@@ -81,9 +81,7 @@ const menu = [
     },
 ]
 
-
-
-// displays menu item on button press 
+// method to display a menu item when image is selected on menu.html
 
 function displayMenu(id) {
     console.log("interaction")
@@ -103,30 +101,38 @@ function displayMenu(id) {
 
 }
 
-// a form to confirm to the customer that they have submitted their information
-// button is connected but information is not recieved from inputs
+// method to confirm booking when booking is placed.
+
+  const bookingForm = document.getElementById("tableBookingForm")
+
+  bookingForm.addEventListener('submit', (e) => {
+    e.preventDefault()
+    const fd = new FormData(bookingForm)
+    const obj = Object.fromEntries(fd);
+
+    const json = JSON.stringify(obj)
+    localStorage.setItem('form', json)
+  
+    checkStored = localStorage.getItem('form')
+    console.log("checkStored: " + checkStored)
+
+    const checkStoredObj = JSON.parse(checkStored)
+
+    const name = checkStoredObj.name
+    const numberOfPeople = checkStoredObj.number
+    const telephone = checkStoredObj.telephone
+    const date = checkStoredObj.date
+    const time = checkStoredObj.time
+
+    alert(`you have submitted a booking under the name of ${name} \n
+    with the telephone submission of ${telephone} \n
+    for ${numberOfPeople} \n
+    on the ${date} \n
+    at ${time} `)
+
+    })
 
 
-let loginForm = document.getElementById("tableBookingForm");
-
-loginForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  console.log("button press")
-
-
-  let name = document.getElementById(nameInput)
-  let telephone = document.getElementById(telephoneInput)
-  //let numberOfPeople = document.getElementById(numberOfPeople)
-  let date = document.getElementById(dateInput)
-  //let time = document.getElementById(time)
-
-  alert(`you have submitted a booking under the name of ${name} \n
-        with the telephone submission of ${telephone} \n
-        for ${numberOfPeople} \n
-        on the ${date} \n
-        at ${time} `)
-  })
 
 
 
